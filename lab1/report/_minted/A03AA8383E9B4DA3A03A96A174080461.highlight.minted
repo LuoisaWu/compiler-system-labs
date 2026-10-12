@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.rodata.str1.8}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}aMS\PYGZdq{}}\PYG{p}{,}\PYG{n+na}{@progbits}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}只读数据段的申明}
+\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}该数据段对齐到8字节位置最佳}
+\PYG{n+nl}{.LC0:}
+\PYG{n+na}{.string}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZpc{}d\PYGZdq{}}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义字符串常量}
+\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{3}
+\PYG{n+nl}{.LC1:}
+\PYG{n+na}{.string}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZpc{}d\PYGZbs{}n\PYGZdq{}}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义字符串常量}
+\end{MintedVerbatim}

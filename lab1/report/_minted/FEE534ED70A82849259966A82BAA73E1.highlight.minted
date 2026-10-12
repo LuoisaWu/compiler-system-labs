@@ -1,0 +1,12 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nl}{.L1:}
+\PYG{+w}{    }\PYG{n+nf}{mv}\PYG{+w}{ }\PYG{n+no}{s3}\PYG{p}{,}\PYG{n+no}{s2}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将寄存器s2的值赋值给s3}
+\PYG{+w}{    }\PYG{n+nf}{add}\PYG{+w}{ }\PYG{n+no}{s2}\PYG{p}{,}\PYG{n+no}{s2}\PYG{p}{,}\PYG{n+no}{s1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将s1的值与s2相加，赋值给s2}
+\PYG{+w}{    }\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC1}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC1}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}.LC1赋值到a0寄存器上}
+\PYG{+w}{    }\PYG{n+nf}{mv}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+no}{s2}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将s2寄存器的值赋值给a1寄存器}
+\PYG{+w}{    }\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{printf}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}调用printf函数完成输出}
+\PYG{+w}{    }\PYG{n+nf}{mv}\PYG{+w}{ }\PYG{n+no}{s1}\PYG{p}{,}\PYG{n+no}{s3}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将s3的值赋值给s1，用于下一轮循环}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+no}{s0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} s0用于程序的循环计数}
+\PYG{+w}{    }\PYG{n+nf}{blt}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+no}{s4}\PYG{p}{,.}\PYG{n+no}{L1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}关键步骤，用于比较循环次数是否已经达到n的值，如果达到了就退出循环，如果没有达到就继续循环}
+\end{MintedVerbatim}

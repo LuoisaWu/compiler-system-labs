@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}output b}
+\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC1}\PYG{p}{)}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC1}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将.LC1的值赋值到a0寄存器中}
+\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{s3}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(}\PYG{n+no}{b}\PYG{p}{)}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+no}{s3}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(}\PYG{n+no}{b}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}同理，将b的值赋值给a1寄存器}
+\PYG{n+nf}{lw}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{(}\PYG{n+no}{a1}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将a1指向的地址加载一个字到寄存器a1中}
+\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{printf}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}调用打印函数完成输出}
+\end{MintedVerbatim}

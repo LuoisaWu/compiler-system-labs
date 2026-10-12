@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{ld}\PYG{+w}{ }\PYG{n+no}{ra}\PYG{p}{,}\PYG{l+m+mi}{24}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}
+\PYG{n+nf}{ld}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{l+m+mi}{16}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}
+\PYG{n+nf}{ld}\PYG{+w}{ }\PYG{n+no}{s1}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}这三行都用于回复寄存器的状态}
+\PYG{n+nf}{li}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将立即数0加载到寄存器a0中，确保完成main函数的返回}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{sp}\PYG{p}{,}\PYG{n+no}{sp}\PYG{p}{,}\PYG{l+m+mi}{32}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}恢复原先设置的地址空间}
+\PYG{n+nf}{jr}\PYG{+w}{ }\PYG{n+no}{ra}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}跳转到ra寄存器的地址，用于返回调用main函数的寄存器上}
+\PYG{n+na}{.size}\PYG{+w}{ }\PYG{n+no}{main}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{.\PYGZhy{}main}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}标记main函数所占空间大小，完成清理}
+\end{MintedVerbatim}

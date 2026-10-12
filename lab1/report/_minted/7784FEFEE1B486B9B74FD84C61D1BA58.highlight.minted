@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{10}\PYG{n}{c10}
+\PYG{o}{\PYGZlt{}} \PYG{n}{define} \PYG{n}{dso\PYGZus{}local} \PYG{n}{i32} \PYG{n+nd}{@main}\PYG{p}{()} \PYG{c+c1}{\PYGZsh{}0 \PYGZob{}}
+\PYG{o}{\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{o}{\PYGZgt{}} \PYG{n}{define} \PYG{n}{dso\PYGZus{}local} \PYG{n}{i32} \PYG{n+nd}{@main}\PYG{p}{()} \PYG{n}{local\PYGZus{}unnamed\PYGZus{}addr} \PYG{c+c1}{\PYGZsh{}0 \PYGZob{}}
+\end{MintedVerbatim}

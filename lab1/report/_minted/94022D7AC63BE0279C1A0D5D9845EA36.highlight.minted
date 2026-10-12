@@ -1,0 +1,12 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+na}{.globl}\PYG{+w}{ }\PYG{n+no}{n}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}申明全局变量n}
+\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.sbss}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}aw\PYGZdq{}}\PYG{p}{,}\PYG{n+na}{@nobits}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}申明虚拟段，用于链接时的符号解析}
+\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}虚拟段需要使用2字节进行对齐}
+\PYG{n+na}{.type}\PYG{+w}{ }\PYG{n+no}{n}\PYG{p}{,}\PYG{+w}{ }\PYG{n+na}{@object}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}为n变量申明类型}
+\PYG{n+na}{.size}\PYG{+w}{ }\PYG{n+no}{b}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}指定b的大小为4字节}
+\PYG{n+nl}{n:}
+\PYG{+w}{  }\PYG{n+na}{.zero}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}给n分配4字节的大小空间}
+
+\PYG{n+na}{.ident}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}GCC:()12.2.0\PYGZdq{}}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}申明GCC编译版本}
+\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.note.GNU\PYGZhy{}stack}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}\PYG{n+na}{@progbits}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}申明栈保护的功能}
+\end{MintedVerbatim}

@@ -1,0 +1,367 @@
+\relax 
+\providecommand\zref@newlabel[2]{}
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\HyPL@Entry{1<</S/D>>}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\HyPL@Entry{5<</S/D>>}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {一、}实验介绍}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}实验目的}{1}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}问题描述}{1}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}分工}{1}{subsection.1.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}实验环境}{2}{subsection.1.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces 两位成员的实验环境配置}}{2}{table.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:env}{{1}{2}{两位成员的实验环境配置}{table.caption.2}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {GCC 15.2.0 与 Clang 21.1.8（任务一）}}}{2}{subfigure.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Clang/LLVM 18.1.3（任务二）}}}{2}{subfigure.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {riscv64-linux-gnu-gcc 与 qemu-riscv64 版本（任务三）}}}{2}{subfigure.1.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 两位成员各任务工具链版本信息佐证}}{3}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:envversions}{{1}{3}{两位成员各任务工具链版本信息佐证}{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {MLIR 18.1.3（进阶要求）}}}{3}{subfigure.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {二、}任务一：了解你的编译器}{3}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}实验原理}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}四个阶段的总体划分}{3}{subsubsection.2.1.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces 编译过程四个阶段的划分}}{3}{table.caption.5}\protected@file@percent }
+\newlabel{tab:fourstage}{{2}{3}{编译过程四个阶段的划分}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}预处理器的功能}{3}{subsubsection.2.1.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces 预处理器的五项功能}}{4}{table.caption.6}\protected@file@percent }
+\newlabel{tab:cpp}{{3}{4}{预处理器的五项功能}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}编译器的六个子阶段}{4}{subsubsection.2.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces 编译器的六个子阶段}}{4}{table.caption.7}\protected@file@percent }
+\newlabel{tab:sixphase}{{4}{4}{编译器的六个子阶段}{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4}汇编器的功能}{4}{subsubsection.2.1.4}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.5}链接器的功能}{5}{subsubsection.2.1.5}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces 静态链接与动态链接}}{6}{table.caption.9}\protected@file@percent }
+\newlabel{tab:linktype}{{5}{6}{静态链接与动态链接}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}实验步骤与结果}{6}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 源程序 src/main.c 的全部内容}}{6}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:mainc}{{2}{6}{源程序 src/main.c 的全部内容}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}预处理阶段}{6}{subsubsection.2.2.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 执行预处理命令并确认 main.i 生成}}{7}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:pre-gen}{{3}{7}{执行预处理命令并确认 main.i 生成}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces main.i 第 1--20 行：预处理生成的行标记}}{7}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:pre-linemarker}{{4}{7}{main.i 第 1--20 行：预处理生成的行标记}{figure.caption.12}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces main.i 第 45--75 行：头文件展开后堆积的真实声明}}{8}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:pre-decls}{{5}{8}{main.i 第 45--75 行：头文件展开后堆积的真实声明}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 在 main.i 中搜索 MAX，结果为空}}{8}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:pre-max}{{6}{8}{在 main.i 中搜索 MAX，结果为空}{figure.caption.14}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces main.i 第 842 行：int main() 位于文件末尾}}{9}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:pre-main}{{7}{9}{main.i 第 842 行：int main() 位于文件末尾}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}编译阶段}{9}{subsubsection.2.2.2}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces 词法分析输出中对应 main 函数的记号序列}}{11}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:lex}{{8}{11}{词法分析输出中对应 main 函数的记号序列}{figure.caption.16}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces AST 输出中 main 函数对应的部分}}{12}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:ast}{{9}{12}{AST 输出中 main 函数对应的部分}{figure.caption.17}{}}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces main.c 中的符号表}}{13}{table.caption.18}\protected@file@percent }
+\newlabel{tab:symtab}{{6}{13}{main.c 中的符号表}{table.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces AST 中 WhileStmt 条件部分的局部放大}}{13}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:while-cond}{{10}{13}{AST 中 WhileStmt 条件部分的局部放大}{figure.caption.19}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces main.ll 的完整内容}}{14}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:mainll}{{11}{14}{main.ll 的完整内容}{figure.caption.20}{}}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces 源码变量与 LLVM 栈位置的对应}}{15}{table.caption.21}\protected@file@percent }
+\newlabel{tab:varmap}{{7}{15}{源码变量与 LLVM 栈位置的对应}{table.caption.21}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces opt 执行过程及生成的各级优化 IR 文件}}{16}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:opt}{{12}{16}{opt 执行过程及生成的各级优化 IR 文件}{figure.caption.22}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces main-clangO2.ll 中 main 函数的完整内容}}{17}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:clango2}{{13}{17}{main-clangO2.ll 中 main 函数的完整内容}{figure.caption.23}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces llc 执行过程及 main-llvm.S 的生成}}{18}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:llc}{{14}{18}{llc 执行过程及 main-llvm.S 的生成}{figure.caption.24}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}汇编阶段}{19}{subsubsection.2.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces 删除旧产物后重新汇编生成 main.o}}{19}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:as-gen}{{15}{19}{删除旧产物后重新汇编生成 main.o}{figure.caption.25}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces readelf -h outputs/main.o 的输出}}{20}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:readelf-ho}{{16}{20}{readelf -h outputs/main.o 的输出}{figure.caption.26}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces readelf -S outputs/main.o：节区头表}}{21}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:readelf-s}{{17}{21}{readelf -S outputs/main.o：节区头表}{figure.caption.27}{}}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces main.o 中关键节区的内容}}{22}{table.caption.28}\protected@file@percent }
+\newlabel{tab:sections}{{8}{22}{main.o 中关键节区的内容}{table.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces readelf -s outputs/main.o：main.o 的符号表}}{22}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:sym-o}{{18}{22}{readelf -s outputs/main.o：main.o 的符号表}{figure.caption.29}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces readelf -r outputs/main.o：main.o 的重定位表}}{23}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:rel-o}{{19}{23}{readelf -r outputs/main.o：main.o 的重定位表}{figure.caption.30}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}链接阶段}{24}{subsubsection.2.2.4}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces gcc -v 输出中的 collect2 链接命令}}{25}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:collect2}{{20}{25}{gcc -v 输出中的 collect2 链接命令}{figure.caption.31}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces file outputs/main 与 readelf -h outputs/main 的输出}}{26}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:readelf-hmain}{{21}{26}{file outputs/main 与 readelf -h outputs/main 的输出}{figure.caption.32}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces main.o 与 main 的 ELF 头对照}}{26}{table.caption.33}\protected@file@percent }
+\newlabel{tab:elfcmp}{{9}{26}{main.o 与 main 的 ELF 头对照}{table.caption.33}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces readelf -s outputs/main 中相关符号的输出}}{27}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:sym-main}{{22}{27}{readelf -s outputs/main 中相关符号的输出}{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces objdump -d outputs/main 中 main 函数的反汇编}}{27}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:objdump-main}{{23}{27}{objdump -d outputs/main 中 main 函数的反汇编}{figure.caption.35}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces readelf -d outputs/main：动态段中的运行时依赖}}{28}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:readelf-d}{{24}{28}{readelf -d outputs/main：动态段中的运行时依赖}{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces ldd outputs/main：运行时动态库的加载情况}}{28}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:ldd}{{25}{28}{ldd outputs/main：运行时动态库的加载情况}{figure.caption.37}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces .plt 节反汇编：PLT 桩的结构}}{28}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:plt}{{26}{28}{.plt 节反汇编：PLT 桩的结构}{figure.caption.38}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces readelf -r outputs/main：.rela.plt 中的动态重定位表}}{29}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:rel-main}{{27}{29}{readelf -r outputs/main：.rela.plt 中的动态重定位表}{figure.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces 直接用 ld 链接（不提供 libc）的报错}}{29}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:ld-fail}{{28}{29}{直接用 ld 链接（不提供 libc）的报错}{figure.caption.40}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces 三种产物的 size 对比与静态可执行文件的 file 结果}}{30}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:size}{{29}{30}{三种产物的 size 对比与静态可执行文件的 file 结果}{figure.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces 运行可执行文件 main：输入 5 输出 120，输入 6 输出 720}}{30}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:run-main}{{30}{30}{运行可执行文件 main：输入 5 输出 120，输入 6 输出 720}{figure.caption.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}产物对比}{30}{subsection.2.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces 编译各阶段产物对比}}{31}{table.caption.43}\protected@file@percent }
+\newlabel{tab:products}{{10}{31}{编译各阶段产物对比}{table.caption.43}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}小结}{31}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {三、}为任务二、三设计 SysY 程序}{31}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}demo 程序设计思路}{31}{subsection.3.1}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}语言特性覆盖情况}{33}{subsection.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces demo.c 的语言特性覆盖情况}}{33}{table.caption.44}\protected@file@percent }
+\newlabel{tab:democover}{{11}{33}{demo.c 的语言特性覆盖情况}{table.caption.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}预期运行结果与手工验算}{33}{subsection.3.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {四、}任务二：LLVM IR 编程}{34}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}实验原理}{34}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}LLVM 的编译流程与中间表示的位置}{34}{subsubsection.4.1.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces LLVM IR 的两种等价存储形态}}{34}{table.caption.45}\protected@file@percent }
+\newlabel{tab:llbc}{{12}{34}{LLVM IR 的两种等价存储形态}{table.caption.45}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}LLVM IR 的基本结构}{35}{subsubsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}SSA 与 PHI 节点}{35}{subsubsection.4.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.4}SysY 语言与运行库}{35}{subsubsection.4.1.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces SysY 运行库常用接口}}{35}{table.caption.46}\protected@file@percent }
+\newlabel{tab:sylibapi}{{13}{35}{SysY 运行库常用接口}{table.caption.46}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}实验步骤与结果}{35}{subsection.4.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}SysY 示例程序 demo.c}{36}{subsubsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}SysY 运行库 sylib.c}{36}{subsubsection.4.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces 自行编写的 sylib.c 函数清单}}{36}{table.caption.47}\protected@file@percent }
+\newlabel{tab:sylibfull}{{14}{36}{自行编写的 sylib.c 函数清单}{table.caption.47}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}手写 LLVM IR：demo.ll}{37}{subsubsection.4.2.3}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces C 关系/逻辑运算到 LLVM IR 的对应}}{40}{table.caption.48}\protected@file@percent }
+\newlabel{tab:icmp}{{15}{40}{C 关系/逻辑运算到 LLVM IR 的对应}{table.caption.48}{}}
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces 算术运算符的映射}}{41}{table.caption.49}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces 手写 demo.ll 的开头部分}}{44}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:llvm-demoll}{{31}{44}{手写 demo.ll 的开头部分}{figure.caption.50}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces 手写 LLVM IR 的常见错误}}{44}{table.caption.51}\protected@file@percent }
+\newlabel{tab:llverr}{{17}{44}{手写 LLVM IR 的常见错误}{table.caption.51}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}编译与验证}{45}{subsubsection.4.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces 用 clang 将 demo.ll 与 sylib.c 一起编译并运行，输出与预期一致}}{45}{figure.caption.52}\protected@file@percent }
+\newlabel{fig:llvm-run}{{32}{45}{用 clang 将 demo.ll 与 sylib.c 一起编译并运行，输出与预期一致}{figure.caption.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces diff 逐字节比对 IR 版输出与 C 版期望输出，无差异并打印 MATCH}}{45}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:llvm-diff}{{33}{45}{diff 逐字节比对 IR 版输出与 C 版期望输出，无差异并打印 MATCH}{figure.caption.53}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5}与 Clang 自动生成 IR 的对照}{46}{subsubsection.4.2.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces 三版 IR 对照（从左到右）：手写 demo.ll、auto\_O0.ll、auto\_O2.ll 的末尾部分，具体代码见仓库}}{46}{figure.caption.54}\protected@file@percent }
+\newlabel{fig:llvm-three}{{34}{46}{三版 IR 对照（从左到右）：手写 demo.ll、auto\_O0.ll、auto\_O2.ll 的末尾部分，具体代码见仓库}{figure.caption.54}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces 手写 demo.ll 与 Clang -O0 版的差异}}{46}{table.caption.55}\protected@file@percent }
+\newlabel{tab:hvo0}{{18}{46}{手写 demo.ll 与 Clang -O0 版的差异}{table.caption.55}{}}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}三版 IR 对比汇总}{48}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces 手写版、Clang -O0 版与 Clang -O2 版 IR 对比}}{48}{table.caption.56}\protected@file@percent }
+\newlabel{tab:threeir}{{19}{48}{手写版、Clang -O0 版与 Clang -O2 版 IR 对比}{table.caption.56}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}小结}{49}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {五、}任务三：RISC-V 汇编编程}{49}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}程序一：斐波那契数列与数组运算}{49}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}汇编程序编写思路}{49}{subsubsection.5.1.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces 手写汇编程序 demo.s 的组成}}{50}{table.caption.57}\protected@file@percent }
+\newlabel{tab:demoscomp}{{20}{50}{手写汇编程序 demo.s 的组成}{table.caption.57}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces 手写汇编程序 demo.s 全文（编辑器整体缩略视图）}}{51}{figure.caption.58}\protected@file@percent }
+\newlabel{fig:riscv-demos}{{35}{51}{手写汇编程序 demo.s 全文（编辑器整体缩略视图）}{figure.caption.58}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}汇编程序分析}{51}{subsubsection.5.1.2}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{lol}{\contentsline {lstlisting}{的}{56}{lstlisting.-69}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3}编译与验证}{58}{subsubsection.5.1.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces 手写 demo.s 的交叉编译、静态链接与 QEMU 运行结果}}{59}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:riscv-build}{{36}{59}{手写 demo.s 的交叉编译、静态链接与 QEMU 运行结果}{figure.caption.59}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces 手写版 demo.s 与编译器生成版 demo\_gcc.s 的编译运行结果对照}}{60}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:riscv-cross}{{37}{60}{手写版 demo.s 与编译器生成版 demo\_gcc.s 的编译运行结果对照}{figure.caption.60}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.4}思考}{60}{subsubsection.5.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}程序二：参数超过 8 个的函数}{60}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}SysY 源程序}{60}{subsubsection.5.2.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces manyargs.c 源程序}}{61}{figure.caption.61}\protected@file@percent }
+\newlabel{fig:riscv-manyargs-src}{{38}{61}{manyargs.c 源程序}{figure.caption.61}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}汇编程序编写思路}{61}{subsubsection.5.2.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces 手写汇编程序 manyargs.s 的组成}}{62}{table.caption.62}\protected@file@percent }
+\newlabel{tab:manyargscomp}{{21}{62}{手写汇编程序 manyargs.s 的组成}{table.caption.62}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces 手写汇编程序 manyargs.s 全文（编辑器整体缩略视图）}}{63}{figure.caption.63}\protected@file@percent }
+\newlabel{fig:riscv-manyargs-s}{{39}{63}{手写汇编程序 manyargs.s 全文（编辑器整体缩略视图）}{figure.caption.63}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}汇编程序分析}{63}{subsubsection.5.2.3}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}编译与验证}{67}{subsubsection.5.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces 手写 manyargs.s 的交叉编译、静态链接与 QEMU 运行结果}}{67}{figure.caption.64}\protected@file@percent }
+\newlabel{fig:riscv-manyargs-build}{{40}{67}{手写 manyargs.s 的交叉编译、静态链接与 QEMU 运行结果}{figure.caption.64}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces 手写版 manyargs.s 与编译器生成版 manyargs\_gcc.s 的运行结果对照}}{68}{figure.caption.65}\protected@file@percent }
+\newlabel{fig:riscv-manyargs-cross}{{41}{68}{手写版 manyargs.s 与编译器生成版 manyargs\_gcc.s 的运行结果对照}{figure.caption.65}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.5}思考}{68}{subsubsection.5.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {六、}进阶要求：观察 AI 编译器 MLIR 的中端处理过程}{68}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}实验原理}{68}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}为什么 AI 编译器需要“多级”中间表示}{68}{subsubsection.6.1.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}MLIR 的三个核心抽象}{69}{subsubsection.6.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {22}{\ignorespaces MLIR 的三个核心抽象}}{69}{table.caption.66}\protected@file@percent }
+\newlabel{tab:mlirabstract}{{22}{69}{MLIR 的三个核心抽象}{table.caption.66}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}从 linalg 到 LLVM 的下降路线}{69}{subsubsection.6.1.3}\protected@file@percent }
+\newlabel{code:lowering}{{6.1.3}{69}{}{lstlisting.-90}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.4}观察中端处理的手段}{70}{subsubsection.6.1.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {23}{\ignorespaces mlir-opt 常用的 IR 打印选项}}{70}{table.caption.67}\protected@file@percent }
+\newlabel{tab:mliroptions}{{23}{70}{mlir-opt 常用的 IR 打印选项}{table.caption.67}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}实验步骤与结果}{70}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}样例程序：一个贴近 AI 负载的 gemm.mlir}{70}{subsubsection.6.2.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces gemm.mlir 的全部内容（高层 linalg 方言书写的 AI 负载）}}{71}{figure.caption.68}\protected@file@percent }
+\newlabel{fig:mlir-gemm}{{42}{71}{gemm.mlir 的全部内容（高层 linalg 方言书写的 AI 负载）}{figure.caption.68}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}逐阶段的渐进式下降}{72}{subsubsection.6.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces mlir-opt-18 无 pass 回显 gemm.mlir，输入可正常解析}}{72}{figure.caption.69}\protected@file@percent }
+\newlabel{fig:mlir-00}{{43}{72}{mlir-opt-18 无 pass 回显 gemm.mlir，输入可正常解析}{figure.caption.69}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces 具名算子被泛化为 linalg.generic，并行/归约维被显式标注}}{73}{figure.caption.70}\protected@file@percent }
+\newlabel{fig:mlir-01}{{44}{73}{具名算子被泛化为 linalg.generic，并行/归约维被显式标注}{figure.caption.70}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces linalg 算子被自动改写为三重 affine.for 循环嵌套}}{74}{figure.caption.71}\protected@file@percent }
+\newlabel{fig:mlir-02}{{45}{74}{linalg 算子被自动改写为三重 affine.for 循环嵌套}{figure.caption.71}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces affine 循环被下降为 scf.for 与 memref.load/store}}{75}{figure.caption.72}\protected@file@percent }
+\newlabel{fig:mlir-03}{{46}{75}{affine 循环被下降为 scf.for 与 memref.load/store}{figure.caption.72}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces scf.for 被下降为 cf.br/cf.cond\_br 基本块控制流图}}{76}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:mlir-04}{{47}{76}{scf.for 被下降为 cf.br/cf.cond\_br 基本块控制流图}{figure.caption.73}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {48}{\ignorespaces 各方言被下降为 llvm 方言，memref 参数展开为描述符字段}}{77}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:mlir-05}{{48}{77}{各方言被下降为 llvm 方言，memref 参数展开为描述符字段}{figure.caption.74}{}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {49}{\ignorespaces 执行 run.sh 一次性生成全部阶段产物，末行提示 ALL STAGES DONE}}{78}{figure.caption.75}\protected@file@percent }
+\newlabel{fig:mlir-run}{{49}{78}{执行 run.sh 一次性生成全部阶段产物，末行提示 ALL STAGES DONE}{figure.caption.75}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}中端优化的观察}{78}{subsubsection.6.2.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {50}{\ignorespaces 优化前 07\_opt\_before.mlir 与优化后 08\_opt\_after.mlir 的对比}}{79}{figure.caption.76}\protected@file@percent }
+\newlabel{fig:mlir-opt}{{50}{79}{优化前 07\_opt\_before.mlir 与优化后 08\_opt\_after.mlir 的对比}{figure.caption.76}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {24}{\ignorespaces 一次 --canonicalize --cse 中同时发生的三种优化}}{79}{table.caption.77}\protected@file@percent }
+\newlabel{tab:mlirpass}{{24}{79}{一次 --canonicalize --cse 中同时发生的三种优化}{table.caption.77}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}用 --mlir-print-ir-after-all 观察 pass 时间线}{80}{subsubsection.6.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {51}{\ignorespaces 09\_ir\_after\_all.log：每个 pass 之后的 IR 转储与分隔标题}}{80}{figure.caption.78}\protected@file@percent }
+\newlabel{fig:mlir-timeline}{{51}{80}{09\_ir\_after\_all.log：每个 pass 之后的 IR 转储与分隔标题}{figure.caption.78}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}实验分析}{80}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}各阶段 IR 的形态与方言对照}{80}{subsubsection.6.3.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {25}{\ignorespaces 渐进式下降各阶段的 IR 形态与关键变化}}{81}{table.caption.79}\protected@file@percent }
+\newlabel{tab:mlirstages}{{25}{81}{渐进式下降各阶段的 IR 形态与关键变化}{table.caption.79}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}方言分层带来的“一处编写、多级复用”}{81}{subsubsection.6.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}MLIR 中端与经典编译流程的位置关系}{81}{subsubsection.6.3.3}\protected@file@percent }
+\newlabel{code:position}{{6.3.3}{81}{}{lstlisting.-113}{}}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}小结}{82}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {七、}总结}{82}{section.7}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {八、}参考文献}{83}{section.8}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {九、}附录}{84}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}附录 A　实验环境与工具版本一览}{84}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}附录 B　复现命令清单}{84}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.1}B.1　任务一：GCC / Clang 四阶段观测}{84}{subsubsection.9.2.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.2}B.2　任务二：LLVM IR 与 SysY}{85}{subsubsection.9.2.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.3}B.3　任务三：RISC-V 汇编}{86}{subsubsection.9.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.2.4}B.4　进阶要求：MLIR 中端处理}{86}{subsubsection.9.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}附录 C　源程序与关键产物清单}{86}{subsection.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.1}C.1　\texttt  {code/task1\_compiler/src/main.c}（任务一分析对象）}{86}{subsubsection.9.3.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.2}C.2　\texttt  {code/task2\_llvm/demo.c}（任务二/三共用的 SysY 示例程序）}{87}{subsubsection.9.3.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.3}C.3　\texttt  {code/task2\_llvm/sylib.c} 与 \texttt  {syhdr.h}（任务二运行库）}{88}{subsubsection.9.3.3}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.4}C.4　\texttt  {code/task2\_llvm/demo.ll}（手写 LLVM IR 全文）}{89}{subsubsection.9.3.4}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.5}C.5　\texttt  {code/task2\_llvm/Makefile}（任务二一键复现）}{94}{subsubsection.9.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.6}C.6　\texttt  {code/task3\_asm/program1\_demo/sysy.h} 与 \texttt  {sysy\_runtime.c}（任务三运行库）}{94}{subsubsection.9.3.6}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.7}C.7　手写任务三程序一 RISC-V 全文（\texttt  {code/task3\_asm/program1\_demo/demo.s}）}{95}{subsubsection.9.3.7}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.8}C.8　\texttt  {code/task3\_asm/program2\_multiarg/manyargs.c}（任务三程序二）}{101}{subsubsection.9.3.8}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.9}C.9　手写任务三程序二 RISC-V 全文（\texttt  {code/task3\_asm/program2\_multiarg/manyargs.s}）}{102}{subsubsection.9.3.9}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.10}C.10　\texttt  {code/task3\_mlir/}（进阶要求：MLIR 样例与脚本）}{107}{subsubsection.9.3.10}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}附录 D　术语表}{109}{subsection.9.4}\protected@file@percent }
+\xdef \mintedoldcachechecksum{\detokenize{\minted@cachechecksum }}
+\gdef \@abspage@last{114}

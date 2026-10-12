@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n+na}{.file}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}float.c\PYGZdq{}}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}源代码文件名为 \PYGZdq{}float.c\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{.option}\PYG{+w}{ }\PYG{n+no}{nopic}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}不生成位置无关代码}
+\PYG{+w}{    }\PYG{n+na}{.attribute}\PYG{+w}{ }\PYG{n+no}{arch}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}rv64i2p1\PYGZus{}m2p0\PYGZus{}a2p1\PYGZus{}f2p2\PYGZus{}d2p2\PYGZus{}c2p0\PYGZus{}zicsr2p0\PYGZdq{}}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}指定RISC\PYGZhy{}V 64位架构，包括整数、乘法、原子操作、浮点、双精度浮点、压缩指令等扩展}
+\PYG{+w}{    }\PYG{n+na}{.attribute}\PYG{+w}{ }\PYG{n+no}{unaligned\PYGZus{}access}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}指定了对齐访问的属性}
+\PYG{+w}{    }\PYG{n+na}{.attribute}\PYG{+w}{ }\PYG{n+no}{stack\PYGZus{}align}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{16}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义了栈的对齐方式,应该按照16字节对齐。}
+\PYG{+w}{    }\PYG{n+na}{.text}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}代码段}
+\PYG{+w}{    }\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.rodata.str1.8}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}aMS\PYGZdq{}}\PYG{p}{,}\PYG{n+na}{@progbits}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义一个只读数据段}
+\PYG{+w}{    }\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}规定按照8字节进行对齐}
+\end{MintedVerbatim}

@@ -1,0 +1,25 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}都是一些后续会用到的字符串}
+\PYG{n+nl}{.LC0:}
+\PYG{+w}{    }\PYG{n+na}{.string}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}please input the first float number: \PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{3}
+
+\PYG{n+nl}{.LC1:}
+\PYG{+w}{    }\PYG{n+na}{.string}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZpc{}f\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{3}
+
+\PYG{n+nl}{.LC2:}
+\PYG{+w}{    }\PYG{n+na}{.string}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}please input the second float number: \PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{3}
+
+\PYG{n+nl}{.LC3:}
+\PYG{+w}{    }\PYG{n+na}{.string}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZpc{}.2f is bigger than \PYGZpc{}.2f\PYGZbs{}n\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{3}
+
+\PYG{n+nl}{.LC4:}
+\PYG{+w}{    }\PYG{n+na}{.string}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZpc{}.2f is not bigger than \PYGZpc{}.2f\PYGZbs{}n\PYGZdq{}}
+\PYG{+w}{    }\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.text.startup}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}ax\PYGZdq{}}\PYG{p}{,}\PYG{n+na}{@progbits}
+\PYG{+w}{    }\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{1}
+\PYG{+w}{    }\PYG{n+na}{.globl}\PYG{+w}{ }\PYG{n+no}{main}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义main全局函数}
+\PYG{+w}{    }\PYG{n+na}{.type}\PYG{+w}{ }\PYG{n+no}{main}\PYG{p}{,}\PYG{+w}{ }\PYG{n+na}{@function}
+\end{MintedVerbatim}

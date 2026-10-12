@@ -1,0 +1,14 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(}\PYG{n+no}{a}\PYG{p}{)}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(}\PYG{n+no}{a}\PYG{p}{)}
+\PYG{n+nf}{lw}\PYG{+w}{ }\PYG{n+no}{s1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{(}\PYG{n+no}{s0}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将a的值加载到s0寄存器中，然后读取一个字给s1}
+
+\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(}\PYG{n+no}{b}\PYG{p}{)}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(}\PYG{n+no}{b}\PYG{p}{)}
+\PYG{n+nf}{lw}\PYG{+w}{ }\PYG{n+no}{s2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{(}\PYG{n+no}{a1}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将b的值加载到a1寄存器中，然后读取一个字给s2}
+
+\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(}\PYG{n+no}{n}\PYG{p}{)}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(}\PYG{n+no}{n}\PYG{p}{)}
+\PYG{n+nf}{lw}\PYG{+w}{ }\PYG{n+no}{s4}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{(}\PYG{n+no}{a0}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将n的值加载到a0寄存器中}
+\PYG{n+nf}{li}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}初始化s0寄存器，用于下一轮循环}
+\end{MintedVerbatim}

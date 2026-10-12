@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{l+m+mi}{54}\PYG{n}{c54}\PYG{p}{,}\PYG{l+m+mi}{55}
+\PYG{o}{\PYGZlt{}} \PYG{n}{declare} \PYG{n}{i32} \PYG{n+nd}{@scanf}\PYG{p}{(}\PYG{n}{i8}\PYG{o}{*} \PYG{n}{noundef}\PYG{p}{,} \PYG{o}{...}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{}1}
+\PYG{o}{\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{o}{\PYGZgt{}} \PYG{p}{;} \PYG{n}{Function} \PYG{n}{Attrs}\PYG{p}{:} \PYG{n}{nofree} \PYG{n}{nounwind}
+\PYG{o}{\PYGZgt{}} \PYG{n}{declare} \PYG{n}{noundef} \PYG{n}{i32} \PYG{n+nd}{@scanf}\PYG{p}{(}\PYG{n}{i8}\PYG{o}{*} \PYG{n}{nocapture} \PYG{n}{noundef} \PYG{n}{readonly}\PYG{p}{,} \PYG{o}{...}\PYG{p}{)} \PYG{n}{local\PYGZus{}unnamed\PYGZus{}addr} \PYG{c+c1}{\PYGZsh{}1}
+\end{MintedVerbatim}

@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nl}{.L4:}
+
+\PYG{+w}{    }\PYG{n+nf}{ld}\PYG{+w}{ }\PYG{n+no}{ra}\PYG{p}{,}\PYG{l+m+mi}{24}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}恢复寄存器ra的地址}
+\PYG{+w}{    }\PYG{n+nf}{ld}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{l+m+mi}{16}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}恢复寄存器s0的地址}
+\PYG{+w}{    }\PYG{n+nf}{li}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}为a0寄存器赋值为0，以便作为函数返回值}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{sp}\PYG{p}{,}\PYG{n+no}{sp}\PYG{p}{,}\PYG{l+m+mi}{32}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将sp栈帧的位置恢复到初始状态}
+\PYG{+w}{    }\PYG{n+nf}{jr}\PYG{+w}{ }\PYG{n+no}{ra}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}跳转到ra中保存的地址执行，返回调用函数的地址}
+\end{MintedVerbatim}

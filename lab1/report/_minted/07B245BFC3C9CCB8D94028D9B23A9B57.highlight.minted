@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+na}{.globl}\PYG{+w}{ }\PYG{n+no}{a}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义全局变量a}
+\PYG{n+na}{.globl}\PYG{+w}{ }\PYG{n+no}{b}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义全局变量b}
+\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.data}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}开始数据段}
+\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}data段将字节对齐到2的倍数，性能最佳}
+\PYG{n+nl}{a:}
+\PYG{+w}{    }\PYG{n+na}{.word}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}给a赋初值0}
+\PYG{n+nl}{b:}
+\PYG{+w}{    }\PYG{n+na}{.word}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}给b赋初值1}
+\end{MintedVerbatim}

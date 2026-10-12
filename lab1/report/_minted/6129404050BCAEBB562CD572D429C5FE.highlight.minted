@@ -1,0 +1,6 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.text.startup}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}ax\PYGZdq{}}\PYG{p}{,}\PYG{n+na}{@progbits}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义代码段}
+\PYG{n+na}{.align}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}代码段不需要对齐，因此对齐到1的倍数即可}
+\PYG{n+na}{.globl}\PYG{+w}{ }\PYG{n+no}{main}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}定义全局变量main}
+\PYG{n+na}{.type}\PYG{+w}{ }\PYG{n+no}{main}\PYG{p}{,}\PYG{+w}{ }\PYG{n+na}{@function}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}申明为全局函数}
+\end{MintedVerbatim}

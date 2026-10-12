@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nl}{.L6:}
+\PYG{+w}{    }\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC4}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}读取.LC4的字符串高位}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC4}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}读取.LC4的字符串低位}
+\PYG{+w}{    }\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{printf}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}调用printf函数}
+\PYG{+w}{    }\PYG{n+nf}{j}\PYG{+w}{ }\PYG{n+no}{.L4}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}判断并跳转到.L4语句}
+\PYG{+w}{    }\PYG{n+na}{.size}\PYG{+w}{ }\PYG{n+no}{main}\PYG{p}{,}\PYG{+w}{ }\PYG{n+no}{.\PYGZhy{}main}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}规定main函数的大小}
+\PYG{+w}{    }\PYG{n+na}{.ident}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}GCC: () 12.2.0\PYGZdq{}}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}规定GCC编译的版本}
+\PYG{+w}{    }\PYG{n+na}{.section}\PYG{+w}{ }\PYG{n+no}{.note.GNU\PYGZhy{}stack}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}\PYG{n+na}{@progbits}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}申明栈保护的功能}
+\end{MintedVerbatim}

@@ -1,0 +1,13 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nl}{main:}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{sp}\PYG{p}{,}\PYG{n+no}{sp}\PYG{p}{,\PYGZhy{}}\PYG{l+m+mi}{32}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}给局部变量和函数调用分配空间}
+\PYG{n+nf}{sd}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{l+m+mi}{16}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}
+\PYG{n+nf}{sd}\PYG{+w}{ }\PYG{n+no}{s1}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}分别分配s0、s1寄存器的栈帧所在位置}
+\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(}\PYG{n+no}{n}\PYG{p}{)}
+\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC0}\PYG{p}{)}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(}\PYG{n+no}{n}\PYG{p}{)}
+\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC0}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{}这四行汇编用于将.LC0的结果存储在a0寄存器中，将n的结果存储在s0寄存器中}
+\PYG{n+nf}{sd}\PYG{+w}{ }\PYG{n+no}{ra}\PYG{p}{,}\PYG{l+m+mi}{24}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}用于正确找到返回地址}
+\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{\PYGZus{}\PYGZus{}isoc99\PYGZus{}scanf}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}调用scanf函数，进行格式化输入}
+\end{MintedVerbatim}

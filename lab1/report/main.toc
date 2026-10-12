@@ -1,0 +1,86 @@
+\contentsline {section}{\numberline {一、}实验介绍}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}实验目的}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}问题描述}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}分工}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}实验环境}{2}{subsection.1.4}%
+\contentsline {section}{\numberline {二、}任务一：了解你的编译器}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}实验原理}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}四个阶段的总体划分}{3}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}预处理器的功能}{3}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}编译器的六个子阶段}{4}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}汇编器的功能}{4}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}链接器的功能}{5}{subsubsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.2}实验步骤与结果}{6}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}预处理阶段}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}编译阶段}{9}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}汇编阶段}{19}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}链接阶段}{24}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}产物对比}{30}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}小结}{31}{subsection.2.4}%
+\contentsline {section}{\numberline {三、}为任务二、三设计 SysY 程序}{31}{section.3}%
+\contentsline {subsection}{\numberline {3.1}demo 程序设计思路}{31}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}语言特性覆盖情况}{33}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}预期运行结果与手工验算}{33}{subsection.3.3}%
+\contentsline {section}{\numberline {四、}任务二：LLVM IR 编程}{34}{section.4}%
+\contentsline {subsection}{\numberline {4.1}实验原理}{34}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}LLVM 的编译流程与中间表示的位置}{34}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}LLVM IR 的基本结构}{35}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}SSA 与 PHI 节点}{35}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}SysY 语言与运行库}{35}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}实验步骤与结果}{35}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}SysY 示例程序 demo.c}{36}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}SysY 运行库 sylib.c}{36}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}手写 LLVM IR：demo.ll}{37}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}编译与验证}{45}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}与 Clang 自动生成 IR 的对照}{46}{subsubsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.3}三版 IR 对比汇总}{48}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}小结}{49}{subsection.4.4}%
+\contentsline {section}{\numberline {五、}任务三：RISC-V 汇编编程}{49}{section.5}%
+\contentsline {subsection}{\numberline {5.1}程序一：斐波那契数列与数组运算}{49}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}汇编程序编写思路}{49}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}汇编程序分析}{51}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}编译与验证}{58}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}思考}{60}{subsubsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.2}程序二：参数超过 8 个的函数}{60}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}SysY 源程序}{60}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}汇编程序编写思路}{61}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}汇编程序分析}{63}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}编译与验证}{67}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}思考}{68}{subsubsection.5.2.5}%
+\contentsline {section}{\numberline {六、}进阶要求：观察 AI 编译器 MLIR 的中端处理过程}{68}{section.6}%
+\contentsline {subsection}{\numberline {6.1}实验原理}{68}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}为什么 AI 编译器需要“多级”中间表示}{68}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}MLIR 的三个核心抽象}{69}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}从 linalg 到 LLVM 的下降路线}{69}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}观察中端处理的手段}{70}{subsubsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.2}实验步骤与结果}{70}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}样例程序：一个贴近 AI 负载的 gemm.mlir}{70}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}逐阶段的渐进式下降}{72}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}中端优化的观察}{78}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}用 --mlir-print-ir-after-all 观察 pass 时间线}{80}{subsubsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.3}实验分析}{80}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}各阶段 IR 的形态与方言对照}{80}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}方言分层带来的“一处编写、多级复用”}{81}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}MLIR 中端与经典编译流程的位置关系}{81}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}小结}{82}{subsection.6.4}%
+\contentsline {section}{\numberline {七、}总结}{82}{section.7}%
+\contentsline {section}{\numberline {八、}参考文献}{83}{section.8}%
+\contentsline {section}{\numberline {九、}附录}{84}{section.9}%
+\contentsline {subsection}{\numberline {9.1}附录 A　实验环境与工具版本一览}{84}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}附录 B　复现命令清单}{84}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}B.1　任务一：GCC / Clang 四阶段观测}{84}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}B.2　任务二：LLVM IR 与 SysY}{85}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}B.3　任务三：RISC-V 汇编}{86}{subsubsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.4}B.4　进阶要求：MLIR 中端处理}{86}{subsubsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.3}附录 C　源程序与关键产物清单}{86}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}C.1　\texttt {code/task1\_compiler/src/main.c}（任务一分析对象）}{86}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}C.2　\texttt {code/task2\_llvm/demo.c}（任务二/三共用的 SysY 示例程序）}{87}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}C.3　\texttt {code/task2\_llvm/sylib.c} 与 \texttt {syhdr.h}（任务二运行库）}{88}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}C.4　\texttt {code/task2\_llvm/demo.ll}（手写 LLVM IR 全文）}{89}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.5}C.5　\texttt {code/task2\_llvm/Makefile}（任务二一键复现）}{94}{subsubsection.9.3.5}%
+\contentsline {subsubsection}{\numberline {9.3.6}C.6　\texttt {code/task3\_asm/program1\_demo/sysy.h} 与 \texttt {sysy\_runtime.c}（任务三运行库）}{94}{subsubsection.9.3.6}%
+\contentsline {subsubsection}{\numberline {9.3.7}C.7　手写任务三程序一 RISC-V 全文（\texttt {code/task3\_asm/program1\_demo/demo.s}）}{95}{subsubsection.9.3.7}%
+\contentsline {subsubsection}{\numberline {9.3.8}C.8　\texttt {code/task3\_asm/program2\_multiarg/manyargs.c}（任务三程序二）}{101}{subsubsection.9.3.8}%
+\contentsline {subsubsection}{\numberline {9.3.9}C.9　手写任务三程序二 RISC-V 全文（\texttt {code/task3\_asm/program2\_multiarg/manyargs.s}）}{102}{subsubsection.9.3.9}%
+\contentsline {subsubsection}{\numberline {9.3.10}C.10　\texttt {code/task3\_mlir/}（进阶要求：MLIR 样例与脚本）}{107}{subsubsection.9.3.10}%
+\contentsline {subsection}{\numberline {9.4}附录 D　术语表}{109}{subsection.9.4}%

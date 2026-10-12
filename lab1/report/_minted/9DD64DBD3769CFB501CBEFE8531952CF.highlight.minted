@@ -1,0 +1,31 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nl}{main:}
+\PYG{+w}{    }\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC0}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将.LC0 高 20 位地址中的内容加载到我们的 a0 寄存器}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{sp}\PYG{p}{,}\PYG{n+no}{sp}\PYG{p}{,\PYGZhy{}}\PYG{l+m+mi}{32}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{}调整栈帧的位置，分配运算空间}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC0}\PYG{p}{)}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}将.LC0完整放入a0寄存器中}
+\PYG{+w}{    }\PYG{n+nf}{sd}\PYG{+w}{ }\PYG{n+no}{ra}\PYG{p}{,}\PYG{l+m+mi}{24}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}完成对ra寄存器的保存}
+\PYG{+w}{    }\PYG{n+nf}{sd}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{l+m+mi}{16}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}完成对s0寄存器的保存}
+\PYG{+w}{    }\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{printf}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{}调用printf函数}
+\PYG{+w}{    }\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC1}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}同理，将.LC1的高20位地址中的内存加载到我们的s0寄存器}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+no}{sp}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}为a1寄存器分配空间}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC1}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将.LC1的低12位放入寄存器a0，凑成完整的.LC1}
+\PYG{+w}{    }\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{\PYGZus{}\PYGZus{}isoc99\PYGZus{}scanf}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}调用scanf函数，读取输入内容}
+\PYG{+w}{    }\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC2}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将.LC2的低位内容放入a0寄存器}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC2}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将.LC2完整放入寄存器中}
+\PYG{+w}{    }\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{printf}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}调用printf函数，打印我们的字符串内容}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+no}{sp}\PYG{p}{,}\PYG{l+m+mi}{12}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}为a1寄存器分配空间}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{s0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC1}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}完整输出.LC1}
+\PYG{+w}{    }\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{\PYGZus{}\PYGZus{}isoc99\PYGZus{}scanf}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}调用scanf函数完成内容的读取}
+
+\PYG{+w}{    }\PYG{n+nf}{flw}\PYG{+w}{ }\PYG{n+no}{fa5}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{}读入第一个浮点数}
+\PYG{+w}{    }\PYG{n+nf}{flw}\PYG{+w}{ }\PYG{n+no}{fa4}\PYG{p}{,}\PYG{l+m+mi}{12}\PYG{p}{(}\PYG{n+no}{sp}\PYG{p}{)}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} 读入第二个浮点数}
+\PYG{+w}{    }\PYG{n+nf}{fgt.s}\PYG{+w}{ }\PYG{n+no}{a5}\PYG{p}{,}\PYG{n+no}{fa5}\PYG{p}{,}\PYG{n+no}{fa4}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{}比较fa5与fa4的大小关系}
+\PYG{+w}{    }\PYG{n+nf}{fcvt.d.s}\PYG{+w}{ }\PYG{n+no}{fa4}\PYG{p}{,}\PYG{n+no}{fa4}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} 将fa4转化为双精度浮点数}
+\PYG{+w}{    }\PYG{n+nf}{fcvt.d.s}\PYG{+w}{ }\PYG{n+no}{fa5}\PYG{p}{,}\PYG{n+no}{fa5}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} 将fa5转化为双精度浮点数}
+\PYG{+w}{    }\PYG{n+nf}{fmv.x.d}\PYG{+w}{ }\PYG{n+no}{a2}\PYG{p}{,}\PYG{n+no}{fa4}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将fa4的值移动到a2寄存器}
+\PYG{+w}{    }\PYG{n+nf}{fmv.x.d}\PYG{+w}{ }\PYG{n+no}{a1}\PYG{p}{,}\PYG{n+no}{fa5}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}  将fa5的值移动到a1寄存器}
+\PYG{+w}{    }\PYG{n+nf}{beq}\PYG{+w}{ }\PYG{n+no}{a5}\PYG{p}{,}\PYG{n+no}{zero}\PYG{p}{,.}\PYG{n+no}{L6}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} 核心步骤，将a5与zero寄存器作比较，如果相等就直接跳转到.L6语句}
+\PYG{+w}{    }\PYG{n+nf}{lui}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}hi}\PYG{p}{(.}\PYG{n+no}{LC3}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将.LC3的高位读入a0寄存器}
+\PYG{+w}{    }\PYG{n+nf}{addi}\PYG{+w}{ }\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+no}{a0}\PYG{p}{,}\PYG{n+nv}{\PYGZpc{}lo}\PYG{p}{(.}\PYG{n+no}{LC3}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{}将.LC3完整读取}
+\PYG{+w}{    }\PYG{n+nf}{call}\PYG{+w}{ }\PYG{n+no}{printf}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{}调用printf函数完成输出}
+\end{MintedVerbatim}

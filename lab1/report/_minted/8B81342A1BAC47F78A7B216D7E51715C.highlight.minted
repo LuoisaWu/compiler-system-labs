@@ -1,0 +1,12 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n}{main}\PYG{p}{()\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{j}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{i}\PYG{o}{=}\PYG{n}{j}\PYG{o}{+}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{i}
+\PYG{+w}{    }\PYG{n+nf}{fo}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}111\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}
